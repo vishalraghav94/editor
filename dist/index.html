@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code in the Dark</title>
+  <script src="bundle.js" inline></script>
+</head>
+<body>
+  <div class="background"></div>
+  <canvas class="canvas-overlay"></canvas>
+  <pre id="editor"></pre>
+  <div class="streak-container">
+      <div class="current">Combo</div>
+      <div class="counter">0</div>
+      <div class="bar"></div>
+      <div class="exclamations"></div>
+  </div>
+  <div class="reference-screenshot-container">
+    <span>Reference</span>
+    <div class="reference-screenshot" style="background-image:url(assets/page.png);"></div>
+  </div>
+
+  <div class="name-tag">
+    Unnamed
+  </div>
+
+  <div class="power-mode-indicator">
+    <h1>POWER MODE!</h1>
+  </div>
+
+  <div class="instructions-container">
+    <iframe class="instructions" src="assets/instructions.html"></iframe>
+  </div>
+
+  <div class="button-bar">
+    <button class="finish-button">Download</button>
+    <button class="instructions-button">Instructions</button>
+    <select name="languages" class="language-selector" id="language">
+      <option value="ace/mode/html" data-ext="html">HTML</option>
+      <option value="ace/mode/javascript" data-ext="js" selected="selected">JS</option>
+      <option value="ace/mode/php" data-ext="php">PHP</option>
+      <option value="ace/mode/python" data-ext="py">Python</option>
+      <option value="ace/mode/c_cpp" data-ext="cpp">C/C++</option>
+      <option value="ace/mode/java" data-ext="java">Java</option>
+      <option value="ace/mode/golang" data-ext="go">GoLang</option>
+      <option value="ace/mode/ruby" data-ext="rb">Ruby</option>
+    </select>
+  </div>
+
+
+  <iframe class="result" src="assets/result.html" frameborder="0"></iframe>
+</body>
+</html>
